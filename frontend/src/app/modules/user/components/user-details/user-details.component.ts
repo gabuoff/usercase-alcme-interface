@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { SnackbarService } from 'src/app/shared/services/snackbar/snackbar.service';
-import { UserService } from '../user/user.service';
+import { UserService } from '../../services/user/user.service';
 import { User } from 'src/app/core/entities/user.entities';
 
 @Component({

@@ -44,10 +44,6 @@ Siga as etapas abaixo para executar a aplicação:
 
 A aplicação será iniciada e estará disponível em `http://localhost:8080`.
 
-## Documentação da API
-
-Esta aplicação utiliza o Swagger para documentar a API e fornecer uma interface interativa para testar as rotas. A documentação da API pode ser acessada em `http://localhost:8080/swagger-ui.html`.
-
 ## Contato
 
 Se tiver alguma dúvida ou precisar de assistência adicional, entre em contato pelo e-mail gabrielmeloc@gmail.com.

@@ -12,10 +12,10 @@ export class UserService {
   constructor(private http: HttpClient) { }
 
   cadastrarCliente(user: User) :  Observable<any>{
-    return this.http.post('http://localhost:8080/contatos', user);
+    return this.http.post('http://localhost:8080/contatos/criar', user);
   }
 
   listarCliente() :  Observable<any>{
-    return this.http.get<any[]>('http://localhost:8080/listar');
+    return this.http.get<any[]>('http://localhost:8080/contatos/buscar-todos');
   }
 }

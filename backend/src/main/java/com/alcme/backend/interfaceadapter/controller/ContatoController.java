@@ -14,9 +14,15 @@ public class ContatoController {
     @Autowired
     ContatoService contatoService;
 
-    @PostMapping
+    @PostMapping("/criar")
     @ResponseStatus(HttpStatus.CREATED)
     public Contato criarContato(@RequestBody Contato contato) {
         return contatoService.salvarContato(contato);
+    }
+
+    @GetMapping("/buscar-todos")
+    @ResponseStatus(HttpStatus.OK)
+    public Iterable<Contato> buscarTodos() {
+        return contatoService.buscarTodos();
     }
 }

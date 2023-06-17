@@ -20,4 +20,8 @@ public class ContatoService {
         validator.validate(contato.getNome(), contato.getEmail(), contato.getTelefone());
         return repository.save(contato);
     }
+
+    public Iterable<Contato> buscarTodos() {
+        return repository.findAll();
+    }
 }

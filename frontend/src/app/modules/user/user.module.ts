@@ -9,7 +9,7 @@ import { AppRoutingModule } from "src/app/app-routing.module";
 import { AppComponent } from "src/app/app.component";
 import { SharedModule } from "src/app/shared/shared.module";
 import { ProgressBarIndeterminateComponent } from "./components/loading-spinner/progress-bar.component";
-import { UserService } from "./components/user/user.service";
+import { UserService } from "./services/user/user.service";
 import { UserListComponent } from "./components/user-listar/user-listar.component";
 
 
