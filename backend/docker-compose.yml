@@ -4,7 +4,6 @@ services:
   mongodb:
     image: mongo
     container_name: mongodb
-    database: clientela
     ports:
       - 27017:27017
     volumes:
@@ -12,6 +11,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: rootuser
       MONGO_INITDB_ROOT_PASSWORD: rootpass
+      MONGO_INITDB_DATABASE: clientela
+    command: ["--auth"]
 
   mongo-express:
     image: mongo-express
@@ -23,6 +24,13 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: rootuser
       ME_CONFIG_MONGODB_ADMINPASSWORD: rootpass
       ME_CONFIG_MONGODB_SERVER: mongodb
+      ME_CONFIG_OPTIONS: '{"useUnifiedTopology": true}'
+      ME_CONFIG_MONGODB_SERVER_SELECTION_TIMEOUT_MS: 5000
+      ME_CONFIG_MONGODB_ENABLE_ADMIN: "true"
+      ME_CONFIG_MONGODB_AUTH_DATABASE: admin
+      ME_CONFIG_MONGODB_AUTH_USERNAME: rootuser
+      ME_CONFIG_MONGODB_AUTH_PASSWORD: rootpass
+      
 
   sonarqube:
     image: sonarqube

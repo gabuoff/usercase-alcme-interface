@@ -1,18 +1,19 @@
+<app-progress-bar *ngIf="isLoading"></app-progress-bar>
 <mat-card class="container">
-    <mat-card-header>
-      <div mat-card-avatar class="header-image"></div>
-      <mat-card-title>Olá meu caro!</mat-card-title>
-      <mat-card-subtitle>Faça o seu cadastro aqui!</mat-card-subtitle>
-      
-    </mat-card-header>
-<form [formGroup]="form" (ngSubmit)="cadastrarCliente()" class="centered-form">
+  <mat-card-header>
+    <div mat-card-avatar class="header-image"></div>
+    <mat-card-title>Olá meu caro!</mat-card-title>
+    <mat-card-subtitle>Faça o seu cadastro aqui!</mat-card-subtitle>
+  </mat-card-header>
+
+  <form [formGroup]="form" (ngSubmit)="cadastrarCliente()" class="centered-form">
     <mat-form-field>
       <input matInput placeholder="Nome" formControlName="name" required>
       <mat-error *ngIf="form.controls.name.invalid && (form.controls.name.dirty || form.controls.name.touched)">
         Nome é obrigatório.
       </mat-error>
     </mat-form-field>
-  
+
     <mat-form-field>
       <input matInput placeholder="E-mail" formControlName="email" required>
       <mat-error *ngIf="form.controls.email.invalid && (form.controls.email.dirty || form.controls.email.touched)">
@@ -20,15 +21,17 @@
         <span *ngIf="form.controls.email.hasError('email')">E-mail inválido.</span>
       </mat-error>
     </mat-form-field>
-  
+
     <mat-form-field>
       <input matInput placeholder="Telefone" formControlName="phone" required>
       <mat-error *ngIf="form.controls.phone.invalid && (form.controls.phone.dirty || form.controls.phone.touched)">
         Telefone é obrigatório.
       </mat-error>
     </mat-form-field>
+
     <mat-card-actions>
-    <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Cadastrar</button>
+      <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Cadastrar</button>
     </mat-card-actions>
   </form>
+
 </mat-card>

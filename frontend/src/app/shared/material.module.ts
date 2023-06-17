@@ -7,11 +7,16 @@ import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from "@angular/material/table";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner'
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
     declarations: [],
     imports: [    
+        MatProgressBarModule,
+        MatProgressSpinnerModule,
         MatTableModule,
         MatToolbarModule,
         MatButtonModule,
@@ -19,9 +24,12 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
         MatCardModule,
         MatInputModule,
         MatFormFieldModule,
-        MatSnackBarModule
+        MatSnackBarModule,
+        MatMenuModule
     ],
     exports: [    
+        MatProgressBarModule,
+        MatProgressSpinnerModule,
         MatTableModule,
         MatToolbarModule,
         MatButtonModule,
@@ -29,7 +37,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
         MatCardModule,
         MatInputModule,
         MatFormFieldModule,
-        MatSnackBarModule
+        MatSnackBarModule,
+        MatMenuModule
     ],
 })
 export class MaterialModule {}

@@ -3,21 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { UserDetailsComponent } from './user-details/user-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MaterialModule } from './material.module';
+import { MaterialModule } from './shared/material.module';
 import { InputMaskModule } from '@ngneat/input-mask';
-
+import { SharedModule } from './shared/shared.module';
+import { UserModule } from './modules/user/user.module';
 @NgModule({
-  declarations: [AppComponent, UserDetailsComponent],
+  declarations: [AppComponent],
   imports: [
+    UserModule,
     BrowserModule,
     MaterialModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    SharedModule,
     InputMaskModule.forRoot()
   ],
   providers: [],

@@ -1,27 +1,43 @@
-# Frontend
+# Frontend do Projeto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+Este é o frontend do projeto ALCME CLIENTELA, responsável por fornecer uma interface de usuário para interagir com o sistema.
 
-## Development server
+## Estrutura de Clean Architecture
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O projeto segue uma arquitetura baseada em Clean Architecture, que visa separar as responsabilidades em camadas distintas para melhorar a modularidade, testabilidade e manutenibilidade do código.
 
-## Code scaffolding
+A estrutura do projeto é organizada da seguinte forma:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- `src/`
+  - `app/`
+    - `core/`: Contém os elementos centrais do sistema, como serviços e repositórios.
+    - `shared/`: Contém componentes e módulos compartilhados em todo o aplicativo.
+## Tecnologias Utilizadas
 
-## Build
+O frontend do projeto é desenvolvido utilizando as seguintes tecnologias:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular: Um framework de desenvolvimento de aplicativos da web em TypeScript.
+- Material Design: Uma biblioteca de componentes de interface de usuário baseados no Material Design.
+- HTTP: Para comunicação com o backend por meio de solicitações HTTP.
 
-## Running unit tests
+## Como Usar
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Siga as etapas abaixo para configurar e executar o frontend do projeto:
 
-## Running end-to-end tests
+1. Certifique-se de ter o Node.js e o Angular CLI instalados em seu ambiente de desenvolvimento.
+2. Clone este repositório em sua máquina local.
+3. Navegue até o diretório do projeto no terminal.
+4. Execute o comando `npm install` para instalar as dependências do projeto.
+5. Execute o comando `ng serve` para iniciar o servidor de desenvolvimento.
+6. Abra o navegador e acesse `http://localhost:4200` para visualizar o aplicativo.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Contato
 
-## Further help
+Em caso de dúvidas ou problemas relacionados ao projeto, entre em contato com:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Nome: Gabriel Melo
+E-mail: gabrielmeloc@gmail.com
+
+## Licença
+
+Este projeto está licenciado nos termos da licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.

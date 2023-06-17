@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <button mat-button (click)="home()">Aplicação Cadastro Cliente</button>
+  <span class="spacer"></span>
+  <button mat-button [matMenuTriggerFor]="menu">
+    Menu
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="listarClientes()">Listar Clientes</button>
+  </mat-menu>
+</mat-toolbar>

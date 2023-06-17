@@ -23,26 +23,21 @@ Certifique-se de ter as seguintes ferramentas instaladas em seu ambiente de dese
 
 - JDK 17 (Java Development Kit)
 - Maven 3.9.2
-- Docker
+- MongoDB
+- MongoDB-Compass
+
+É possivel acessar via docker mas talvez seja necessario mexer no application.properties
 
 
 ## Configuração do Banco de Dados
 
-Este projeto utiliza o MongoDB como banco de dados. Para configurar o MongoDB em seu ambiente local, você pode utilizar o Docker Compose fornecido no arquivo `docker-compose.yml`. Para executá-lo, siga os passos abaixo:
-
-1. Abra um terminal ou prompt de comando.
-2. Navegue até o diretório onde está localizado o arquivo `docker-compose.yml`.
-3. Execute o comando `docker-compose up -d` para iniciar os containers do MongoDB e do Mongo Express.
-
-Certifique-se de que o Docker esteja instalado e em execução em seu sistema antes de executar o comando acima.
-
-Após executar o comando, o MongoDB estará acessível em `mongodb://localhost:27017` e o Mongo Express, uma interface de administração para o MongoDB, estará disponível em `http://localhost:8081`.
+Este projeto utiliza o MongoDB como banco de dados. Para configurar o MongoDB em seu ambiente local, você pode utilizar o MongoDBCompass `https://www.mongodb.com/try/download/community-kubernetes-operator`
 
 ## Executando a Aplicação
 
 Siga as etapas abaixo para executar a aplicação:
 
-1. Certifique-se de que o MongoDB esteja em execução, conforme descrito na seção anterior.
+1. Certifique-se de que o MongoDB esteja em execução.
 2. Abra um terminal ou prompt de comando.
 3. Navegue até o diretório raiz do projeto.
 4. Execute o comando `mvn spring-boot:run` para iniciar a aplicação.
