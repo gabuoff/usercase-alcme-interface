@@ -44,6 +44,15 @@ Siga as etapas abaixo para executar a aplicação:
 
 A aplicação será iniciada e estará disponível em `http://localhost:8080`.
 
+## TDD - Test Driven Development
+
+Para a vizualização de cobertura de testes foi utilizado o Jacoco, o arquivo é gerado no caminho target/site assim que usado o comando
+
+- Foi utilizado o JUNIT para a cobertura de testes
+
+- Rodar os testes, use: `mvn test`
+
+
 ## Contato
 
 Se tiver alguma dúvida ou precisar de assistência adicional, entre em contato pelo e-mail gabrielmeloc@gmail.com.
